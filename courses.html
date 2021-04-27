@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<title>College Website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<section class="sub-header">
+		<nav>
+			<a href="index.html"><img src="cet.png" height="50%" width="50%"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="courses.html">COURSES</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+					<li><a href="creators.html">PAGE CREATOR</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+		<h1>Our Departments</h1>
+	</section>
+<!-----------Department----------->
+	<section class="our-department">
+		<div class="row">
+			<div class="department-col">
+				<h1>&nbsp&nbsp&nbspDepartments</h1>
+				<p>Architecture<br>Biotechnology<br>Civil Engineering<br>Computer Science & Application (MCA)<br>Computer Science & Engineering<br>Electrical Engineering<br>Fashion & Apparel Technology<br>Information Technology<br>Instrumentation & Electronics Engineering<br>Mechanical Engineering<br>Textile Engineering<br>Planning<br>Mathematics & Humanities<br>Physics<br>Chemistry</p>
+			</div>
+			<div class="department-col">
+				<img src="ee.png">
+			</div>
+		</div>
+	</section>
+	<section class="course">
+		<h1>Academics</h1>
+		<p>UG programme,PG programme,Ph.D.Programme(Under TEQIP)</p>
+
+		<div class="row">
+			<div class="course-col">
+				<h3>B.tech&nbsp,&nbspB.Arch&nbsp,&nbspB.Plan</h3>
+				<p>Architecture<br>Bachelor in Planning<br>Biotechnology(SSP)<br>Civil Engineering<br>Computer Science & Engineering(SSP)<br>Electronics and Instrumentation engineering<br>Eletrical engineering<br>Fashion & Aparel Technology(SSP)<br>Information Technology(SSP)<br>Mechanical Engineering<br>Textile Engineering</p>
+			</div>
+			<div class="course-col">
+				<h3>M.tech&nbsp,&nbspM.Arch&nbsp,&nbspM.Plan</h3>
+				<p>Computer Science & Engineering (SSP),Information Technology (SSP),Structural Engineering. (SSP),Industrial Engineering & Management (SSP),Power System Engineering,Electronic & Instrumentation Engineering,Biotechnology,Water Resources Engineering,Geotechnical Engineering,Power Electronics & Drives,Energy System Engineering,Electronics & Communication Engineering,Signal Processing Engineering,Thermal Engineering,Design & Dynamics,Textile Chemical Processing,M. C. A,M. Arch. (SSP),M. Plan,M.Sc. in Applied Chemistry,
+				M.Sc. in Mathematics and Computing,M.Sc. in Applied Physics,Integrated M.Sc. in Applied Chemistry,Integrated M.Sc. in Mathematics and Computing,Integrated M.Sc. in Applied Physics</p>
+			</div>
+			<div class="course-col">
+				<h3>PhD</h3>
+				<p>Biotechnology<br>Civil Engineering<br>Computer science and Engineering<br>chemistry<br>Electrical Engineering<br>Information Technology<br>Mechanical Engineering<br>Physics</p>
+			</div>
+				
+			</div>
+		</div>
+	</section>
+<!-----Footer---->
+	<section class="footer">
+		<h4>About Us</h4>
+		<p>College is conferred with UGC Autonomous status for a period of Ten years from 2017-18 academic session to 2026-27 academic session.</p>
+		<div class="icons">
+			<i class="fa fa-facebook"></i>
+			<i class="fa fa-twitter"></i>
+			<i class="fa fa-instagram"></i>
+			<i class="fa fa-linkedin"></i>
+		</div>
+		
+	</section>
+
+	<!-----------JavaScript for Toggle Menu----------------->
+	<script>
+
+		var navLinks = document.getElementById("navLinks");
+		function showMenu() {
+			navLinks.style.right = "0";
+		}
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+		}
+	</script>
+
+</body>
+</html>

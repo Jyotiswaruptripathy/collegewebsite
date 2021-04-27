@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="with=device-width, initial-scale=1.0">
+	<title>College Website</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<section class="sub-header">
+		<nav>
+			<a href="index.html"><img src="cet.png" height="50%" width="50%"></a>
+			<div class="nav-links" id="navLinks">
+				<i class="fa fa-times" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="courses.html">COURSES</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+					<li><a href="creators.html">PAGE CREATOR</a></li>
+				</ul>
+			</div>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+		</nav>
+		<h1>Contact Us</h1>
+	</section>
+<!-----------Contact----------->
+	<section class="location">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14970.299944742233!2d85.7758457!3d20.276454!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xde71ead59307dcca!2sCollege%20of%20Engineering%20and%20Technology%2C%20Bhubaneswar!5e0!3m2!1sen!2sin!4v1619269443570!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+		
+	</section>
+	<section class="contact-us">
+		<div class="row">
+			<div class="contact-col">
+				<div>
+					<i class="fa fa-home"></i>
+					<span>
+						<h5>College of Engineering & Technology Ghatikia</h5>
+						<p>Kalinga Nagar Bhubaneswar- 751003 Odisha, India</p>
+					</span>
+				</div>
+				<div>
+					<i class="fa fa-phone"></i>
+					<span>
+						<h5>Phone: +91 674 2386075</h5>
+						<p>Monday to Saturday: 9:30A.M-5:00P.M</p>
+					</span>
+				</div>
+				<div>
+					<i class="fa fa-fax"></i>
+					<span>
+						<h5>Fax: + 91 674 2386182</h5>
+						<p>Monday to Saturday: 9:30A.M-5:00P.M</p>
+					</span>
+				</div>
+				<div>
+					<i class="fa fa-envelope-o"></i>
+					<span>
+						<h5>info@cet.edu.in</h5>
+						<p>www.cet.edu.in</p>
+					</span>
+				</div>
+			</div>
+			<div class="contact-col">
+				<form action="formhandler.php" method="post">
+					<input type="text" name="name" placeholder="Enter your Name" required>
+					<input type="email" name="email" placeholder="Enter email address" required>
+					<input type="subject" name="subject" placeholder="subject" required>
+					<textarea rows="2" name="messsage" placeholder="message" required></textarea>
+					<button type="submit" class="hero-btn red-btn">Send Message</button>
+				</form>
+			</div>
+			</div>
+		
+	</section>
+
+<!-----Footer---->
+	<section class="footer">
+		<h4>About Us</h4>
+		<p>College is conferred with UGC Autonomous status for a period of Ten years from 2017-18 academic session to 2026-27 academic session.</p>
+		<div class="icons">
+			<i class="fa fa-facebook"></i>
+			<i class="fa fa-twitter"></i>
+			<i class="fa fa-instagram"></i>
+			<i class="fa fa-linkedin"></i>
+		</div>
+		
+	</section>
+
+	<!-----------JavaScript for Toggle Menu----------------->
+	<script>
+
+		var navLinks = document.getElementById("navLinks");
+		function showMenu() {
+			navLinks.style.right = "0";
+		}
+		function hideMenu(){
+			navLinks.style.right = "-200px";
+		}
+	</script>
+
+</body>
+</html>
